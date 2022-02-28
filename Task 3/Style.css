@@ -1,0 +1,128 @@
+body{
+    background-size:cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background: linear-gradient(-45deg, #cc1edb, #c13fe9, #62d0f1, #f364c8);
+    background-size: 400% 400%;
+    animation: gradient 6s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.container{
+    width: 100%;
+}
+
+h1{
+    color:black ;
+    text-align:center;
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow';
+    text-decoration: underline;
+    font-size:30 px;
+}
+
+h2{
+    color:black;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    text-decoration:underline;
+}
+
+table{
+    width: 70%;
+    table-layout: initial;
+    border-collapse: collapse;
+    margin:auto;
+    background-color: rgb(226, 149, 250);
+}
+
+.table-list{
+    width:50%;
+    padding: 5px;
+    height: 20px;
+    border-collapse: collapse;
+    background-color: rgb(226, 149, 250);
+}
+
+td, th {
+    border: 1px solid black;
+    border: double;
+    text-align: left;
+    padding: 8px;
+}
+input[type="text"],
+input[type="Number"],
+input[type="Email"],
+input[type="Address"]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.DOB{
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: normal;
+    height: 36px;
+    line-height: 20px;
+    margin: 0px 0px 0px 5px;
+    padding: 0px 20px 0px 8px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  .Day{
+      display:flex;   
+  }
+  .Month{
+      display:flex;
+  }
+  .pop{
+      text-align: center;
+      padding: 10px;
+  }
+  .sub{
+      background-color: #00cf00;
+      border: none;
+      border-radius: 6px;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 400;
+      height: 36px;
+      overflow: hidden;
+      padding: 0 32px;
+  }
+  .sub:hover{
+      background-color: #00a400;
+      cursor: pointer;
+  }
+  .clear{
+      margin-left: 5px;
+      background-color: #f30800;
+      border: none;
+      border-radius: 6px;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 400;
+      height: 36px;
+      overflow: hidden;
+      padding: 0 32px;
+  }
+  .clear:hover{
+      background-color: #ad0802;
+      cursor: pointer;
+  }
