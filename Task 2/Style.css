@@ -1,0 +1,92 @@
+header{
+  height: 60px;
+  width: 100%;
+  border-bottom: 2px solid #0a0000;
+  padding-top: 3px;
+  padding-bottom: 10px;
+  font-size: 50px;
+  color: black;
+  display: flex;
+}
+.rob
+{
+  font-family: "Sacramento", cursive;
+  font-size: 20px;
+  margin-left: 0px;
+  padding-top: 40px;
+}
+button{
+  margin: auto;
+  float: right;
+  height: 50px;
+  position: fixed;
+  right: 0;
+  width: 100px;
+  border-radius: 100px;
+  margin-top: 8px;
+  margin-right: 100px;
+  transition: all 0.4s ease;
+  border: 20px solid transparent;
+  font-size: 1em;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border: 20px solid transparent;
+  box-sizing: border-box;
+}
+button:hover{
+  background-color: rgb(255, 0, 128);
+  cursor: pointer;
+}
+img {
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+body{
+  background: rgb(195,63,251);
+  background: radial-gradient(circle, rgba(195,63,251,1) 0%, rgba(70,252,231,1) 90%);
+}
+.card {
+  margin: 20px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  transition: 0.3s;
+  height: 220px;
+  cursor: pointer;
+  border-radius: 20px;
+  color: #292b2c;
+  background-color: #dd00ff;
+  box-shadow: 0 4px 8px 0 rgba(249, 255, 255, 0.925);
+  border-bottom: 2px solid rgb(255, 255, 255);
+  border-top: 2px solid rgb(255, 255, 255);
+  transition: all 0.4s ease;
+  text-align: center;
+  box-sizing: border-box;
+}
+.card:hover,.card:focus{
+  animation: pulse 1s;
+  box-shadow: 0 12px 18px 0 rgba(249, 255, 255, 0.925);
+  transition: all 0.4s ease;
+  background-color:#ee7dff;
+}
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 var(--hover); }
+}
+::selection {
+  color: rgb(195,63,251);
+  background: white;
+}
+.one{
+  margin-top:10px ;
+}
+.sibling-fade{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.sibling-fade { visibility: hidden; }
+.sibling-fade > * { visibility: visible; }
+.sibling-fade > * { transition: opacity 150ms linear 100ms, transform 150ms ease-in-out 100ms; }
+.sibling-fade:hover > * { opacity: 0.4; transform: scale(0.9); }
+.sibling-fade > *:hover { opacity: 1; transform: scale(1); transition-delay: 0ms, 0ms; }
