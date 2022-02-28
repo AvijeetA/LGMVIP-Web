@@ -1,0 +1,118 @@
+body{
+	font-family: 'Open Sans',sans-serif;
+	background:linear-gradient(135deg, #b6b2ab 0%, #B3AFA7 25%, #B8B5AF 25%, #78736B 50%, #6F6862 50%, #58504B 75%, #5F574E 75%, #625A51 100%);
+    size: cover;
+	background-repeat: no-repeat;
+}
+.previous-operand {
+	color: rgba(0, 0, 0, 0.685);
+	font-size: 1.5rem;
+}
+.current-operand {
+	color: rgb(0, 0, 0);
+	font-size: 2.5rem;
+}
+#calculator{
+	width: 320px;
+	height: 520px;
+	background-color: #eaedef;
+	margin: 0 auto;
+	top: 20px;
+	position: relative;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#result{
+	height: 120px;
+}
+#history{
+	text-align: right;
+	height: 10px;
+	margin: 0 20px;
+	padding-top: 20px;
+	font-size: 15px;
+	color: #919191;
+}
+#output{
+	text-align: right;
+	margin: 10px 20px;
+	font-size: 40px;
+}
+.operator, .number{
+	width: 50px;
+	height: 50px;
+	margin: 15px;
+	float: left;
+	border-radius: 100%;
+	border-width: 2px;
+	font-weight: bold;
+	font-size: 20px;
+}
+.number, .operator{
+	cursor: pointer;
+}
+.operator:active, .number:active{
+	font-size: 13px;
+}
+.operator:focus, .number:focus, .empty:focus{
+	outline: 8;
+}
+.number{
+	background-color: #d5d0ff;
+}
+.number:hover{
+	background-color: #bbb3ff;
+}
+button:nth-child(1){
+	background-color: #67f88b;
+}
+button:nth-child(1):hover{
+	background-color: #47ee71;
+}
+button:nth-child(2){
+	background-color: #f867ec;
+}
+button:nth-child(2):hover{
+	background-color: #ff4bf0;
+}
+button:nth-child(3){
+	background-color: #fdff70;
+}
+button:nth-child(3):hover{
+	background-color: #dbdd51;
+}
+button:nth-child(4){
+	font-size: 25px;
+	background-color: #20b2aa;
+}
+button:nth-child(4):hover{
+	background-color: #1f9791;
+}
+button:nth-child(8){
+	font-size: 25px;
+	background-color: #fab636;
+}
+button:nth-child(8):hover{
+	background-color: #ffa500;
+}
+button:nth-child(12){
+	font-size: 25px;
+	background-color: #f08080;
+}
+button:nth-child(12):hover{
+	background-color: #ec5f5f;
+}
+button:nth-child(16){
+	font-size: 25px;
+	background-color: #7d93e0;
+}
+button:nth-child(16):hover{
+	background-color: #576fc7;
+}
+button:nth-child(20){
+	font-size: 25px;
+	background-color: #9477af;
+}
+button:nth-child(20):hover{
+	background-color: #8a5fb3;
+}
